@@ -1,0 +1,154 @@
+<html>
+
+<head>
+
+
+    <meta charset="UTF-8" http-equiv="refresh" name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Isla Lozano</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="java.js"></script>
+
+</head>
+
+<body>
+
+    <!-- I used co-pilot to help create the bar that appears on the top of the page. I also used co-pilot to create the different titles that appear on the page, their function, and where in the main page they take the user if they click on it.-->
+
+     <div style="background: #2193b0; color: white; padding: 20px 0; text-align: left; font-size: 2rem; font-family: Arial, sans-serif; letter-spacing: 2px; padding-left: 40px; display: flex; align-items: center; cursor: pointer;">
+
+        <a href="index.html" style="color: white; text-decoration: underline; margin-left: auto; margin-left: 5px; font-size: 1.2rem; cursor: pointer; cursor: pointer;">Prehistoric Anomalies Network</a>
+
+        <a href="lozano.html" style="color: white; text-decoration: underline; margin-left: auto; margin-right: -700px; font-size: 1.2rem; cursor: pointer;">Lozano</a>
+
+        <a href="oasis.html" style="color: white; text-decoration: underline; margin-left: auto; margin-right: -700px; font-size: 1.2rem; cursor: pointer; cursor: pointer;">Oasis</a>
+
+        <a href="polar.html" style="color: white; text-decoration: underline; margin-left: auto; margin-right: 40px; font-size: 1.2rem; cursor: pointer; cursor: pointer;">Polar</a>
+
+    </div>
+
+    
+    <div class="container" style="min-height: 100vh; width: 100%; position: relative; display: flex; flex-direction: column; justify-content: center; align-items: center; background: linear-gradient(180deg, #f3fbfc 0%, #d3efff 100%); width: 100%; margin: 0 auto;">
+
+
+        <span class="highlight" id="text" style="position: absolute; top: 5%;">
+
+            <h1>Isla Lozano</h1>
+
+        </span>
+
+        <span class="highlight" id="text" style="background-color: rgb(255, 136, 0); color: white;text-align: center; position: absolute; top: 35%; left: 5%;">
+
+            <h3>Isla Lozano is the first island bought by Wesley, and is the permanent home to the majority of the relocated prehostoric animals; it is also the main site of our opperations. Isla Lozano is a tropical island off the coast of The Bahamas, with lush forests and wetlands, it currently contains non-avian dinosaurs, pterosaurs, and marine repriles. The isle has since been evacuated of all the locals to make way for our opperations as we aim to minimise human impact on this ecosystem in hopes to prevent the transmissions of disease and the illegal smuggling of PAN property. We have set four bases on Isla Lozano, each housing a medbay to attend to injured animals, and a communications tower to broadcast signals, photos and videos of the island over to our base on the mainland. There is little to no humans on Isla Lozano, the only people allowed on the island are Wesley and PAN employees in the event of an emergency.</h3>
+
+        </span>
+
+        <span class="highlight" id="text" style="background-color: rgb(7, 157, 84); color: white;text-align: center; position: absolute; top: 35%; left: 65%;" onclick="playAudio2()">
+
+            <h3> Have a listen to the sounds of Isla Lozano: </h3>
+            <audio controls loop id="Audio2" src="Sounds/Nature Ambience.mp3">
+                
+            </audio>
+
+
+        </span>
+
+    </div>
+
+
+
+    </div>
+
+
+        <!-- I used co-pilot to help make the positions of the buttons as I am unfamiliar with how to place buttons on the page, along with making the buttons use png's as their appearance. I also used co-pilot to help create the Map.png appear in the div as a background element so that the buttons can go over the map.-->
+
+    <div class="container" style="min-height: 100vh; width: 100%; position: relative; display: flex; flex-direction: column; justify-content: center; align-items: center; background: linear-gradient(180deg, #3c454b 0%, #22272c 100%); margin: 0 auto;">
+
+        <img style="width: 1150px; display: block; margin-left: auto; margin-right: auto;" src="images/Map.png">
+
+        <button 
+            onclick="Megalosaurus006()" 
+            style="
+                position: absolute;
+                top: 19%;
+                left: 73%;
+                transform: translate(-50%, -50%);
+                background: transparent;
+                border: none;
+                padding: 0;
+                cursor: pointer;
+            ">
+            <img src="images/M-icon.png" alt="Megalosaurus Icon" style="width: 100px; height: 68px;">
+        </button>
+
+         <button 
+            onclick="Iguanodon027()" 
+            style="
+                position: absolute;
+                top: 79%;
+                left: 72%;
+                transform: translate(-50%, -50%);
+                background: transparent;
+                border: none;
+                padding: 0;
+                cursor: pointer;
+            ">
+            <img src="images/I-icon.png" alt="Megalosaurus Icon" style="width: 100px; height: 68px;">
+        </button>
+
+        </button>
+
+         <button 
+            onclick="Cetiosaurus014()" 
+            style="
+                position: absolute;
+                top: 54%;
+                left: 80%;
+                transform: translate(-50%, -50%);
+                background: transparent;
+                border: none;
+                padding: 0;
+                cursor: pointer;
+            ">
+            <img src="images/C-icon.png" alt="Megalosaurus Icon" style="width: 100px; height: 68px;">
+        </button>
+
+        </button>
+
+         <button 
+            onclick="Hylaeosaurus003()" 
+            style="
+                position: absolute;
+                top: 64%;
+                left: 35%;
+                transform: translate(-50%, -50%);
+                background: transparent;
+                border: none;
+                padding: 0;
+                cursor: pointer;
+            ">
+            <img src="images/H-icon.png" alt="Megalosaurus Icon" style="width: 100px; height: 68px;">
+        </button>
+
+    </div>
+
+
+    <div class="container" style="min-height: 100vh; width: 100%; position: relative; display: flex; flex-direction: column; justify-content: center; align-items: center; background: linear-gradient(180deg, #3c454b 0%, #22272c 100%); margin: 0 auto;">
+
+        <h1 style="color: white;">Isla Oasis animal status:</h1>
+        <h3 style="color: white;">Cetiosaurus: __________________________________________________________________________________ Alive:49 Deceased:16 </h3>
+        <h3 style="color: white;">Hylaeosaurus: _________________________________________________________________________________ Alive:37 Deceased:4 </h3>
+        <h3 style="color: white;">Iguanodon: ____________________________________________________________________________________ Alive:58 Deceased:17 </h3>
+        <h3 style="color: white;">Megalosaurus: _________________________________________________________________________________ Alive:10 Deceased:2 </h3>
+        <h3 style="color: white;">Pterodaustro: _________________________________________________________________________________ Alive:42 Deceased:17 </h3>
+        <h3 style="color: white;">Deinonychus: _________________________________________________________________________________ Alive:17 Deceased:6 </h3>
+        <h3 style="color: white;">Fluvionectes: _________________________________________________________________________________ Alive:22 Deceased:5 </h3>
+        <h3 style="color: white;">Shonisaurus: _________________________________________________________________________________ Alive:10 Deceased:2 </h3>
+
+    </div>
+
+
+</body>
+
+
+</html>

@@ -1,0 +1,363 @@
+@font-face {
+    font-family: Roboto;
+    src: url(fonts/RobotoMono-Regular.ttf);
+}
+
+/* I used co-pilot to change the default background into a png of a forest environment*/
+
+html,
+body,
+.container {
+    background: url("images/Background.png") no-repeat center center fixed;
+    background-size: cover;
+    color: rgb(5, 50, 87);
+}
+
+
+.container {
+
+    font-family: Roboto;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: -0px -8px -0px -8px;
+
+}
+
+span {
+
+    font-size: 0.9vw;
+    transform: translate(0%, 0%);
+    max-width: 50%;
+
+}
+
+
+#text2 {
+    position: absolute;
+    font-size: 1vw;
+    z-index: 2;
+    transform: translate(-80%, -500%);
+    max-width: 30%;
+    font-size: 0.7em;
+    border-style: groove;
+    color: white;
+    opacity: 0.4;
+}
+
+
+
+#text3 {
+    position: absolute;
+    font-size: 1vw;
+    z-index: 2;
+    transform: translate(50%, 200%);
+    max-width: 30%;
+    font-size: 0.7em;
+    background-image: url(images/11.jpg);
+    color: white;
+    opacity: 0.4;
+}
+
+
+
+
+video {
+
+    width: 100%;
+    height: 100%;
+}
+
+
+.highlight {
+
+}
+
+#text {
+
+    font-size: 0.9vw;
+
+
+
+}
+
+
+
+
+
+
+@media only screen and (max-width: 1080px) {
+
+
+    span {
+
+        max-width: 100%;
+        font-size: 2vw;
+
+    }
+
+
+    #text {
+
+        font-size: 2vw;
+    }
+
+
+
+
+
+}
+
+
+        p {
+            font-size: 1em;
+            text-align: left;
+        }
+        
+        h1{
+            font-size: 5vw;
+            margin-bottom: 50px;    
+        }
+        
+        h2{
+            font-size: 1.5em;
+        }
+        
+        h3,
+        h4,
+        h5,
+        h6{
+            font-size: 1.5em;
+        }
+        
+        a {
+            color: #000000;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        a:active{
+            color: #000000;
+        }
+        
+        /*img {
+            float: right;
+        }*/
+        
+        ul {
+            display: block;
+            list-style-type: none;
+            max-width: 67%;
+            border-style: solid;
+            border-color: #012118;
+            border-width: 5px;
+            margin-bottom: 25px;
+            padding: 25px;
+            overflow: hidden;
+            background-color: #000000;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+                display: block;
+                color: #ffffff;
+                font-size: 1.5em;
+                text-align: center;
+                padding: 16px;
+                text-decoration: none;
+        }
+
+        .menu-icon{
+                
+              padding: 16px;
+              border: none;
+              cursor: pointer;
+            
+        }
+
+        .menu-icon-bar1, .menu-icon-bar2, .menu-icon-bar3{
+            width: 40px;
+            height: 6px;
+            background-color: black;
+            margin: 6px 0;
+            transition: 0.4s;           
+        }
+
+        .dropdown {
+            position: fixed;
+            top: 3%;
+            right: 3%;
+        }
+
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          right: 0;
+          background-color: #ffffff;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+        }
+
+        .dropdown-content a {
+          color: #000000;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #000000;
+            color:#ffffff; 
+        }
+
+        .dropdown:hover .dropdown-content {
+          display: block;
+        }
+        
+        * {
+            box-sizing:border-box;
+        }
+
+        [class*="col-"] {
+            float: left;
+            padding: 15px;
+            background-color:#fcfdfd;
+            overflow: auto;
+        }
+
+        .col-1 {width: 8.33%;}
+        .col-2 {width: 16.66%;}
+        .col-3 {width: 25%;}
+        .col-4 {width: 33.33%;}
+        .col-5 {width: 41.66%;}
+        .col-6 {width: 50%;}
+        .col-7 {width: 58.33%;}
+        .col-8 {width: 66.66%;}
+        .col-9 {width: 75%;}
+        .col-10 {width: 83.33%;}
+        .col-11 {width: 91.66%;}
+        .col-12 {width: 100%;}
+
+        .row::after {
+          content: "";  
+          clear: both;
+          display: table;
+        }
+
+        @media only screen and (max-width: 1080px) {
+              [class*="col-"] {
+                width: 100%;
+              }
+            .dropdown {
+            position:static;
+            display: block;
+            }
+            
+            .row {
+                
+                
+                
+            }
+            
+        }
+      
+    #transition {
+        height: 200px;
+        transition: transform 2s;
+}
+
+    #transition:hover {
+    transform: rotate(360deg);
+}
+
+       #transition1 {
+           position: relative;
+           width: 50%;
+           height: 30%;
+           transition: width 2s, height 2s, opacity 2s;
+           z-index: 0;
+
+
+       }
+
+       #transition1:hover {
+
+           width: 72%;
+           height: 42%;
+           z-index: 2;
+
+       }
+
+         #transition2 {
+           position: relative;
+           width: 50%;
+           height: 30%;
+           transition: width 2s, height 2s, opacity 2s;
+           z-index: 0;
+
+
+       }
+
+       #transition2:hover {
+
+           width: 82%;
+           height: 52%;
+           z-index: 2;
+
+       }
+
+         #transition3 {
+           position: relative;
+           width: 50%;
+           height: 30%;
+           transition: width 2s, height 2s, opacity 2s;
+           z-index: 0;
+
+
+       }
+
+       #transition3:hover {
+
+           width: 83%;
+           height: 53%;
+           z-index: 2;
+
+       } 
+
+            #transition4 {
+           position: relative;
+           width: 50%;
+           height: 30%;
+           transition: width 2s, height 2s, opacity 2s;
+           z-index: 0;
+
+
+       }
+
+       #transition4:hover {
+
+           width: 75%;
+           height: 45%;
+           z-index: 2;
+
+       }
+
+       .center-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+       }
+
+       video {
+    width: 100%;
+    }
